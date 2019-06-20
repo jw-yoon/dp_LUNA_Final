@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Luna</title>
+
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<meta property="og:title" content="Luna:달에 홀리다" />
+	<meta property="og:description" content="달에 홀려버린 우리들" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://jw-yoon.github.io/Luna_final/" />
+	<meta property="og:image" content="thumbnail.jpg" />
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<style>
+	.navi{position: absolute; display: block;}
+	.ul{margin: auto; display: block; text-align: center;}
+	li{list-style-type: none; width: 100px; height: 40px; color: white; background: #000033; float: left; text-align: center; line-height: 40px;}
+	li a{text-decoration: none;color: white; font-weight: 300px;}
+	.wrap{background: white;}
+	.song{position: absolute; left:0; top:0;  z-index: 100;}
+	.meaning .moontxt h3{color: #000033}
+	.meaning .moontxt p{color: #000033}
+
+	body h1, h2, h3, h4, p{margin: 0; padding:0; color: white;}
+	h4{font-size: 24pt; font-family: NanumMyeongjo; font-weight: 100; line-height: 45pt;}
+	h3{padding-right: 15mm; padding-left: 15mm; padding-top: 9mm; padding-bottom: 5mm; font-size: 30pt; font-family: NanumMyeongjo; font-weight: 700; line-height: 48pt;}
+	p{padding-right: 15mm; padding-left: 15mm; font-size: 22pt; font-family: NanumMyeongjo; font-weight: 400; line-height: 42pt;}
+	section{; position: relative; overflow: hidden;}
+	.hihi{line-height: 22pt;}
+	.title{width: 1200px; height: 7.05cm; margin: auto; display: block; text-align: center; color: white; padding-top: 200px; padding-bottom: 350px; background: #000033;}
+		.title h1{font-size: 200pt; padding-bottom: 0px; font-family: NanumMyeongjo; font-weight: 700;}
+		.title h2{font-size: 24pt; font-family: NanumMyeongjo; font-size: 400;}
+
+	.front{width:1200px ; height:1200px; margin: auto; background: #000033;}
+
+	.mooon{width:80%; position: absolute; animation: ro 65s infinite alternate linear; display: block;}
+		@keyframes ro{
+				from{}
+				to{transform: rotate(360deg);}
+					}
+	.moon-text{position: absolute; text-align: left; color: white; }
+	.circle{width:1200px; height: 1200px;background: #000033; display: block; margin: auto;}
+	.mooncircle{position: absolute; display: block;}
+	.circle-text{position: absolute; text-align: center; display: block;}
+
+	.hide{width:1200px; height:1200px; margin: auto; background: #000033; padding-top: 250px;}
+	.imghide{position: absolute; animation: lim infinite 10s alternate cubic-bezier(.67,.57,.39,.55); display: block; }
+
+	@keyframes lim{
+		from{}
+		to{left: 25px; }
+		}
+
+	.imghidemoon{margin: auto; display: block;}
+	.globes{width:1200px ; height:1500px; margin: auto; background: #000033;}
+	.imgglobes{margin: auto; display: block;}
+
+	.land{width:1200px ; height:1800px; margin: auto; background:#000033;}
+	.land-text1{position: absolute; display: block;}
+	.land-text2{position: absolute; display: block;}
+	.imgland{width: 90%;}
+
+	.god{width: 1200px; height: 2000px; margin: auto;background:#000033;}
+	.god-text{position: absolute;display: block;}
+	.godd-text{position: absolute;display: block;}
+	.imggod{position: absolute; display: block; width: 1000px;}
+
+	.something{width: 1200px; height: 1500px; background:#000033; margin:auto;display: block; }
+	.half{position: absolute; display: block; z-index: 99;left:590px; top:290px;}
+	.half:hover{ left:900px; transition: all 1s; opacity: 0 }
+	.somethingtxt{position: absolute;display: block; z-index: 1}
+	.wolf{width: 1200px; height:900px; margin: auto;background:#000033;}
+	.imgwolf{position: absolute;display: block;}
+	.wolf_text{position: absolute;display: block;}
+
+	.gumiho{width: 1200px; height: 1100px; margin: auto;background:#000033;}
+	.imgfox{position: absolute;display: block;}
+	.fox-test{position: absolute;display: block;}
+
+	.meaning{width: 1200px; height: 1900px; margin: auto;background:#000033;}
+	.lunatictxt{position: absolute;display: block;}
+	.moontxt{position: absolute;display: block;color: #000033;}
+	.moon{position: absolute;display: block;}
+
+	.text1{width: 1200px; height: 900px; margin: auto;background:#000033; text-align: center; }
+	.text1-text{position: absolute;display: block;}
+
+	.supermoon{width: 1200px; height: 1500px; margin: auto;background:#000033;}
+	.imgsupermoon{margin: auto;display: block; width: 700px;}
+	.moonrabite{width: 1200px; height: 1400px; margin: auto;background:#000033;}
+	.imgmoonrabite{margin:auto; display: block;}
+	.text2{width: 1200px; height: 800px; margin: auto;background:#000033; text-align: center; }
+	.travel{width: 1200px; height: 2300px; margin: auto;background:#000033;}
+	.travel-text{position: absolute;display: block;}
+	.travelscript{position: absolute;display: block;}
+	.script-text{position: absolute;display: block;}
+	.lunam{width: 1200px; height: 1600px; margin: auto; background: #000033;}
+	.last{width: 1200px; height: 600px; margin: auto;background: #000033; text-align: center;}
+	footer{width: 1200px; background: #000033; margin: auto;display: block; text-align: center; color: white;}
+	footer p{font-family: Noto Sans KR; font-weight: 300; font-size: 15px; padding: 20px; line-height: 5px}
+	footer h3{font-family: Noto Sans KR; font-weight: 700; font-size: 20px; padding-top: 30px; padding-bottom: 5px; line-height: 20px;}
+	.foot{padding-bottom: 70px;}
+	.foot{position: relative; display: block;}
+	.back{width: 1200px; height: 400px; background: #000033; margin: auto; display: block;}
+	.back-to{position: relative; display: block;  color: #000033; font-family: Noto Sans KR; font-size: 16px; }
+
+	
+</style>
+
+<body>
+<div class="wrap" id="start">
+	<div class="song">
+		<embed src="Cast_of_Pods.mp3" autostart="true" loop="true" showcontrols="0" height="0" width="0"></div>
+	<div class="full">
+		<section class="title">
+			<h1>Luna</h1>
+			<h2>달에 홀리다</h2>
+			<nav class="navi" style="left: 260px; top: 700px">
+				<ul>
+					<li><a href="#front">intro</a> </li>
+					<li><a href="#hide">history</a></li>
+					<li><a href="#god">story</a></li>
+					<li><a href="#something">lunatic</a></li>
+					<li><a href="#Korea">Korea</a></li>
+					<li><a href="#travel">travel</a></li>
+				</ul>
+			</nav>
+		</section>
+	
+		<section class="front" id="front">
+			<img src="moon.png" class="mooon" style="left: -370px; top: 100px;">
+			<div class="moon-text" style="left: 660px; top: 340px; width: 505px;">
+			<h4 style="letter-spacing: -1pt">달은 지구에서 약 38만5천 km 떨어져 있는 지구의 위성이다.<br>하늘이 어슴푸레 졌을 때 문득 하늘을 바라보면 하얗게 떠 있는 달이 보인다. 가끔 그대로 시선을 빼앗겨, 멍하니 달을 쳐다보고는 한다.</h4>
+			</div>
+		</section>
+
+	<section class="circle">
+		<img src="mooncircle.png" class="mooncircle" style="left: 10px; top:300px;">
+		<div class="circle-text" style="left: 220px; top: 630px">
+			<p>달에는 설명할 수 없는 그만의 묘한 마력이 있다<br>우연히 바라본 그 순간, 우리는 달에 홀려버리고 만다</p>
+		</div>
+	</section>
+	<section class="hide" id="hide">
+		<img src="moonhide.png" class="imghide" style="left: 500px; top: 250px;">
+		<img src="ymoon.png" class="imghidemoon">
+		<h3>개기월식</h3>
+		<p >월식은 월면 전부 또는 일부가 지구의 그림자에 가리어져서 지구에 보는 달의 밝은 부분이 일부 또는 전부가 어둡게 보이는 현상을 말한다. 지구가 달과 태양 사이에 위치할 때에 일어나는 현상으로 만월일 때에만 일어난다.</p>
+	</section>
+	<section class="globes">
+		<img src="globes.png" class="imgglobes">
+		<h3>망원경과 달</h3>
+		<p>갈릴레오 갈릴레이는 네덜란드에서 발명된 최초의 망원경을 개량해 천체 망원경을 개발하는 데 성공한다. 그는 망원경을 통해 달의 표면이 매끄럽지 않고 산과 분화구로 이루어져 있다는 것을 발견했다. 갈릴레이는 망원경을 통해 관찰할 달을 여러 장의 스케치로 남겨놓았다.</p>
+	</section>
+	<section class="land">
+		<img src="land.png" class="imgland" style="left: -100px; width: ">
+		<div class="land-text1" style=" left: 0px; top: 940px; width: 855px;">
+			<h3>달착륙과 달</h3>
+			<p>1969년 7월 20일 미국의 아폴로 11호가 달에 착륙했다.<br> 이 사건은 인류가 달에 발을 디뎠다는 역사적인 사건이다. 왜 하필 달이었을까. 그저 지구와 가장 가깝다는 이유인가 아니면 밤하늘에서 밝게 빛나는 원에 홀려버려서일까?</p>
+		</div>
+		<div class="land-text2" style=" left: 570px; top: 1285px; width: 635px;">
+			<p style="letter-spacing: -0.5pt">하지만 이런 달 착륙 소식은 거짓일지도 모른다는 루머가 있었다. 성조기의 그림자의 방향, 진공상태의 우주인데 성조기가 펄럭이고 있는 모습 등을 근거로 루머가 확산되었다. 하지만 다양한 실험을 통해 그 루머는 거짓임이 밝혀졌다. 하지만 무엇이 진실이고, 거짓인지는 아무도 모른다.</p>
+		</div>
+	</section>
+	<section class="god" id="god">
+		<img src="god.png" style="opacity: 0.5">
+		<img src="godbig.png" class="imggod" style="left: 200px; top: 500px;">
+		<div class="god-text" style="left: 0px; top: 1250px; width: 1030px">
+			<h3>달의 신: 셀레네와 아르테미스</h3>
+			<p>본디 달의 여신은 ‘셀레네’라는 이름으로 ‘아르테미스’와는 다른 존재이다. 셀레네는 티탄족 히페리온과 테이야 사이에서 태어난 딸이다. 태양의 신 헬리오스 및 새벽의 여신 에오스와는 남매지간이다.</p>
+		</div>
+		<div class="godd-text" style="left: 580px; top: 1535px; width: 620px;">
+			<p style="letter-spacing: -0.5pt">하지만 어느 순간 수렵, 궁술, 순결의 신인 아르테미스와 달의 여신인 셀레네를 혼동, 동일시하는 경향이 많아지고 셀레네는 신화 작가의 관심 속에서 사라져 간다. 셀레네 이외에도 숲의 신 다이애나, 마술의 신 헤카테 또한 아르테미스와 동일시 되는 경향이 있다.</p>
+		</div>
+	</section>
+	<section class="something" id="something">
+		<img src="halfmoon.png" class="half" style=" height: 630px; ">
+		<img src="something.png" class="somethingtxt" style="width: 600px; left: 300px; top: 300px">
+	</section>
+	<section class="wolf">
+		<img src="wolf.jpeg" class="imgwolf" style="left: 0px; top: 100px; width: 530px; padding-left: 15mm;">
+		<div class="wolf_text" style="width: 577px; left: 620px; top: 100px;">
+			<h3>늑대인간(웨어울프)</h3>
+			<p style="letter-spacing: -0.4pt">“늑대인간은 달을 보면 미친다.”라는 말이 전해져 내려온다. 늑대인간의 설화는 유럽, 특히 동유럽권에 많이 퍼져있다. 보통 보름날이 되면 늑대로 변하여 사람을 공격한다는 것이 특징이다.</p>
+			<p class="hihi"> &nbsp; </p>
+			<p>늑대인간은 판타지 소설, 드라마, 영화에서 자주 쓰이는 소재이기도 하다.</p>
+		</div>
+	</section>
+	<section class="gumiho">
+		<img src="fox.jpg" class="imgfox" style="left: 0px; top: 100px; width: 530px; padding-left: 15mm">
+		<div class="fox-test" style="left: 620px; top: 60px; width: 577px;">
+			<h3>구미호</h3>
+			<p style="letter-spacing: -1pt">동양의 전설에서 내려오는 간을 빼먹는 꼬리 아홉 개 달린 여우이다.</p>
+			<p class="hihi"> &nbsp; </p>
+			<p style="letter-spacing: -1pt">옛날 전설의 고향 프로그램을 보면 붉은 만월이 뜰 때 흉포하게 변하는 묘사를 볼 수 있다.</p>
+		</div>
+	</section>
+	<section class="meaning">
+		<img src="lunaticimg.png" class="lunaticimg" style=" width: 800px;">
+		<div class="lunatictxt" style="width: 630px; left: 160px; top: 200px;">
+			<h3>Lunatic: 미치광이</h3>
+			<p>Luna는 이탈리어로 달이라는 뜻이고 Lunatic은 미치거나 정신을 놓은 사람을 이르는 말이다.</p>
+		</div>
+		<img src="moonimg.png" class="moon" style="width: 700px; left: 500px; top: 700px;">
+		<div class="moontxt" style="width: 530px; left: 600px; top: 930px;">
+			<h3 class="moontxtp">Moon: 멍하니 보내다</h3>
+			<p class="moontxtp">Moon은 동사로 멍하니 보낸다는 의미를 가지고 있다.</p>
+		</div>
+	</section>
+	<section class="text1" id="Korea">
+		<div class="text1-text" style="width: 780px; left: 220px;top: 200px ">
+			<p>달은 예로부터 ‘무언가 있다’라고 여겨지는 존재였다.<br>그것이 길조든 망조 든 선한 것이든 사악한 것이든,<br>신성한 것이든, 달은 어떠한 존재였다.</p>
+		</div>
+	</section>
+	<section class="supermoon">
+		<img src="supermoon.png" class="imgsupermoon" style="padding-bottom: 30px;">
+		<h3>보름달</h3>
+		<p>한국에서 달은 원시종교에서 신앙의 대상이 되었고, 후에 달에 정령이 있다고 믿어</p><p style="letter-spacing: -0.5pt"> 소원을 비는 대상이 되었다. 민속에서도 보름달은 어둠을 몰아내는 밝음과 더 좋은 세상을 기약하는 기원의 대상으로 숭상되었다.</p>
+		<p class="hihi"> &nbsp; </p>
+		<p style="letter-spacing: -0.5pt"> 특히, 대보름은 새해 들어 가득 찬 달을 백성들이 함께 맞이하고 ‘달맞이’, ‘달집태우기’등의 의식을 통해 공동채 의식을 일 깨웠다. </p>
+	</section>
+	<section class="moonrabite">
+		<img src="moonrabite.png" class="imgmoonrabite" style="padding-bottom: 30px;">
+		<h3>달과 월계수와 토끼</h3>
+		<p>푸른 하늘 은하수 하얀 쪽배엔 계수나무 한 나무 토끼 한 마리. 우리가 익히 알고 있는 동요이다. 우리 선조는 달의 무늬를 보고 월계수와 토끼를 연상하여 달에는 토끼가 산다고 믿기도 했다. 그리고 그곳에서는 떡을 찢고 있다는 상상 또한 이루어졌다.</p>
+	</section>
+	<section class="text2">
+		<p>과거, 달에 가기를 꿈꾸던 이들,<br>그들이 달에 갈 수 있었던 방법은 상상이었다.<br>그들이 생각했던 달의 모습은 어땠을까.</p>
+	</section>
+	<section class="travel" id="travel">
+		<img src="poster.jpg" style="left: 0px; top: 100px; width: 530px; padding-left: 15mm">
+		<div class="travel-text" style="width: 577px; left: 620px; top: 0px;">
+		<h3>Le Voyage Dans La Lune<br>(달세계 여행)</h3>
+		<p style="letter-spacing: 0.2pt">Le Voyage Dans La Lune는 1902년 조르주 멜리에스 감독의 흑백 무성 영화이다.</p>
+		<p class="hihi"> &nbsp;</p> 
+		<p style="letter-spacing: 0.2pt"> 원작은 쥘 베른의 소설 <지구에서 달까지>. 감독은 이 소설을 각색해서 영화를 제작했다. 최초의 과학 영화이며, 당대의 혁신적인 특수 효과로 유명하다.</p></div>
+		
+		<iframe width="1000" height="610" src="https://www.youtube.com/embed/_FrdVdKlxUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="margin:auto;display: block;padding-top: 200px; padding-bottom: 30px;">
+		</iframe>
+		<p>눈에 로켓이 착륙하는 장면, 즉 우주선이 달에 부딪히는(박히는) 장면이 유명한데, 스톱 모션 기법으로 만들어졌다고 알려진 영상 가운데 최초이기 때문이다. 시간이 된다면 영화를 감상해 보자.</p>
+		
+		
+	</section>
+	<section class="lunam">
+ 	<img src="Lunar.png" style="width: 1100px; margin: auto; display: block;">
+	<h3> 달 토지 소유권 “루나 엠버시”</h3>
+	<p>오래전 ‘UN 우주 조약’에 의해 “어떠한 정부나 기관도 달의 부동산을 소유할 수 없다.” 라고 명시되어있다. 하지만 개인이나 기업은 이곳에서 제외된다. 이를 알게 된 ‘데니스 호프’는 1980년 미국 정부와 UN에 달 소유권을 청구했고, 달 소유권을 승인받는다.</p>
+	<p class="hihi"> &nbsp;</p>
+	<p> 이후 그는 달나라 대사관 ‘루나엠버시(Lunar Embassy)’를 설립하고 일반인들에게 달의 땅을 분양한다. 세계 각지의 스타, 심지어 국내의 연애인 그리고 일반인들마저 달 땅을 소유하고 있다.</p>
+	</section>
+	<section class="last">
+		<div class="lastt" style="width: 900px; margin: auto; display: block;">
+			<p>달에 홀려 끊임없이 달을 바라보고 그 흐름에 따라 달에 닿고, 이제는 모든 이가 달을 소유하고 그곳에 가기를 원한다.<br><br>언젠가 우리도 달에 홀려서 달 표면이 아닌,<br>우리가 모르는 그 어느곳으로 날아가버릴지도 모른다.</p>
+		</div>
+	</section>
+	<section class="back">
+
+		<div class="back-to" style=" top: 80px; text-align: right; padding-right: 60px;">
+			<br>
+			<br><br>
+			<a href="#start">back to top</a>
+		</div>
+	</section>
+	
+</div>
+	
+</div>
+</body>
+
+<footer class="foot">
+		<p>Song | Cast of Pods by Doug Maxwell</p>
+		<h3>Luna: 달에 홀리다</h3>
+		<p>copyright©2019 HKNU DESIGN Jeong-woon Yoon all rights reserved. | lily98629@gmail.com</p>
+</footer>
+</html>
